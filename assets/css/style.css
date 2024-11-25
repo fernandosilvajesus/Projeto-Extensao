@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Hero page_password page_phishing"
+        "Hero page_privacidade page_privacidade"
+        "Hero page_sobre page_sobre";
+}
+
+.container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.Hero {
+    grid-area: Hero;
+    background: url("../images/background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.page_password {
+    grid-area: page_password;
+    background-color: #00c4cc;
+    height: 100%;
+}
+
+.page_phishing {
+    grid-area: page_phishing;
+    background-color: #ff738e;
+}
+
+.page_privacidade {
+    grid-area: page_privacidade;
+    background-color: #a548ff;
+}
+
+.page_dispositivos {
+    grid-area: page_dispositivos;
+    background-color: #ffa53b;
+}
+
+.page_ransomware {
+    grid-area: page_ransomware;
+    background-color: #6422b8;
+}
+
+.page_sobre {
+    grid-area: page_sobre;
+    background-color: #ffd93b;
+}
+
+/* Adiciona transição suave para o efeito */
+.container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Aplica o efeito de aumentar o tamanho e adicionar uma sombra */
+.container a:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+}
+
+
+.iframe{
+    background-color: #fff;
+    height: 500px;
+}
